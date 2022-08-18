@@ -19,7 +19,6 @@ const text = 4102080860435620
 validator(text);
 expected output: "NOT VALID"
 
-Expected Output: 
 
 
 Test: "double every other number to determine validity"
@@ -28,8 +27,24 @@ const text = 4102080860435620
 validator(text);
 Expected Output: "4204070760465320"
 
-Test: 
-Code:
-const text = 
 
-Expected Output: 
+Test: should show sum of new value and if its valid or not
+Code:
+const text = 4102080860435620
+validator(text);
+Expected Output: 0, valid
+
+const text = 4102080880435620
+validator(text);
+Expected Output: some number, not valid
+
+
+test: the form will only output if the card has 16 digits and isn't negative
+
+code:
+const text = lskjf
+validator(text);
+Expected Output: Error, credit cards are 16 positive integers
+
+const text = -1234567890123456
+Expected Output: Error, credit cards are 16 positive integers
