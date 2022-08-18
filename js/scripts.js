@@ -1,8 +1,27 @@
 function validator(e){
-return e;
+  let eString = e.toString();
+  console.log(typeof(eString));
+  let eSum = 0
+  for (i=0; i < eString.length; i++) {
+    eSum += parseInt(eString[i]);
+    console.log(eString[i], eSum)
+    if (eSum >= 10) {
+      eSum -= 10
+      console.log("subtracted. New Value: " + eSum);
+    }
+  }
+  let validOut
+  if (eSum === 0) {
+    validOut = "Credit card is VALID"
+  } else {
+    validOut = "Credit card is NOT VALID"
+  }
+
+  return validOut;
 }
 
-
+//turn the 16 digit num into a 16 char string
+// 
 
 function formHandler(event) {
   console.log("handler started")
