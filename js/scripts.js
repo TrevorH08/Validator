@@ -1,6 +1,26 @@
 function validator(e){
   let eString = e.toString();
   console.log(typeof(eString));
+  let newE = "";
+  let temp2 = 0
+for (i = 1; i < eString.length; i+=2) {
+  console.log(eString[i]);
+  newE = newE.concat(eString[i-1]);
+  console.log(newE);
+  temp2 = parseInt(eString[i]) * 2;
+  if (temp2 >= 10) {
+    temp2 -= 9;
+    console.log(temp2);
+  }
+  newE = newE.concat(temp2);
+  console.log(newE);
+}
+
+
+
+
+
+  return newE;
   let eSum = 0
   for (i=0; i < eString.length; i++) {
     eSum += parseInt(eString[i]);

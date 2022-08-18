@@ -21,11 +21,12 @@ expected output: "NOT VALID"
 
 Expected Output: 
 
-Test: 
-Code:
-const text = 
 
-Expected Output: 
+Test: "double every other number to determine validity"
+Code: 
+const text = 4102080860435620
+validator(text);
+Expected Output: "4204070760465320"
 
 Test: 
 Code:
